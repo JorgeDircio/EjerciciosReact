@@ -18,10 +18,6 @@ const exercises = [
 
 export default function Menu() {
 
-  const handleSelectedExercises = (id) => {
-
-  };
-
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -46,7 +42,7 @@ export default function Menu() {
           <List>
             {exercises.map((item) => (
               <ListItem key={item.id} disablePadding>
-                <ListItemButton onClick={()=> handleSelectedExercises(item.id)}>
+                <ListItemButton>
                   <ListItemText primary={item.title} />
                 </ListItemButton>
               </ListItem>

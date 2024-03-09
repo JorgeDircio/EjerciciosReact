@@ -1,4 +1,5 @@
-import { Box, Toolbar, Typography } from "@mui/material";
+import PropTypes from 'prop-types';
+import { Box, Toolbar } from "@mui/material";
 
 export default function ContentMenu({ children }) {
   return (
@@ -8,3 +9,7 @@ export default function ContentMenu({ children }) {
     </Box>
   )
 }
+
+ContentMenu.propTypes = {
+  children: PropTypes.node.isRequired
+};
